@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <span className={`text-2xl font-bold ${scrolled ? 'text-purple-900' : 'text-white'}`}>
-              JS<span className="text-blue-500">Dev</span>
+              <span className="text-blue-500">Portfolio</span>
             </span>
           </div>
           <div className="hidden md:block">

@@ -130,29 +130,21 @@ interface EducationItem {
 
 const educationData: EducationItem[] = [
   {
-    degree: 'Master of Computer Science',
-    institution: 'Stanford University',
-    period: '2018 - 2020',
-    description: 'Specialized in Artificial Intelligence and Machine Learning. Completed thesis on "Optimizing Neural Networks for Mobile Applications".',
+    degree: 'Bachelor of technology in Computer Engineering',
+    institution: 'Sankalchand patel colloge of engineering',
+    period: '2018 - 2022',
+    description: 'Graduated with honors.learn basics of computer science and programming.',
     icon: '🎓',
     color: 'from-red-500 to-pink-500'
   },
   {
-    degree: 'Bachelor of Science in Computer Engineering',
-    institution: 'MIT',
-    period: '2014 - 2018',
-    description: 'Graduated with honors. Member of the ACM student chapter and participated in multiple hackathons.',
+    degree: 'Degree in 12th standard',
+    institution: 'Shree Swaminarayan High Secondary School',
+    period: '2016 - 2018',
+    description: 'Completed 12th standard in shree swaminarayan high secondary school. gandhinagar.',
     icon: '🔬',
     color: 'from-blue-500 to-cyan-500'
   },
-  {
-    degree: 'Full Stack Web Development Bootcamp',
-    institution: 'Coding Academy',
-    period: '2013 - 2014',
-    description: 'Intensive 6-month program covering front-end and back-end technologies.',
-    icon: '💻',
-    color: 'from-green-500 to-teal-500'
-  }
 ];
 
 const Education: React.FC = () => {
@@ -226,9 +218,9 @@ const Education: React.FC = () => {
           className="opacity-0 transform transition-all duration-1000"
         >
           <div className="text-center mb-16">
-            <span className="inline-block px-3 py-1 bg-purple-900 bg-opacity-50 rounded-full text-sm font-medium text-purple-300 mb-3">My Journey</span>
+            {/* <span className="inline-block px-3 py-1 bg-purple-900 bg-opacity-50 rounded-full text-sm font-medium text-purple-300 mb-3">My Journey</span> */}
             <h2 className="text-3xl font-extrabold sm:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-300">
-              Education & Training
+              Education
             </h2>
             <div className="mt-4 max-w-2xl mx-auto">
               <p className="text-gray-300">My academic journey has equipped me with the knowledge and skills needed to excel in the tech industry.</p>
@@ -248,6 +240,7 @@ const Education: React.FC = () => {
               {educationData.map((item, index) => (
                 <div 
                   key={index}
+                  // @ts-ignore
                   ref={(el) => (itemRefs.current[index] = el)}
                   className={`relative opacity-0 transform transition-all duration-700 cursor-pointer`}
                   onMouseEnter={() => setActiveIndex(index)}
@@ -294,11 +287,11 @@ const Education: React.FC = () => {
                           )}
                         </div>
                         
-                        {activeIndex === index && (
+                        {/* {activeIndex === index && (
                           <button className="mt-4 px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-md text-white font-medium hover:opacity-90 transition-opacity animate-fadeIn">
                             View Details
                           </button>
-                        )}
+                        )} */}
                       </div>
                     </div>
                     

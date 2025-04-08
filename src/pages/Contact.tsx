@@ -14,7 +14,7 @@ const Contact: React.FC = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
   
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = () => {
     // setFormState({...});
   };
   
@@ -76,24 +76,24 @@ const Contact: React.FC = () => {
             <div>
               <div className="prose max-w-none">
                 <p className="text-lg text-gray-600">
-                  I'm currently open to freelance projects and full-time opportunities. 
+                  I'm currently open for new full-time opportunities. 
                   If you'd like to work together or have any questions, feel free to reach out!
                 </p>
               </div>
               
               <div className="mt-8 space-y-6">
                 <div className="flex items-center">
-                  <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                  {/* <div className="flex-shrink-0">
+                   <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
                       <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                       </svg>
                     </div>
-                  </div>
-                  <div className="ml-4">
+                  </div>  */}
+                  {/* <div className="ml-4">
                     <h3 className="text-lg font-medium text-gray-900">Phone</h3>
                     <p className="mt-1 text-gray-600">+1 (123) 456-7890</p>
-                  </div>
+                  </div> */}
                 </div>
                 
                 <div className="flex items-center">
@@ -106,7 +106,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div className="ml-4">
                     <h3 className="text-lg font-medium text-gray-900">Email</h3>
-                    <p className="mt-1 text-gray-600">john.smith@example.com</p>
+                    <p className="mt-1 text-gray-600">KXtHr@example.com</p>
                   </div>
                 </div>
                 
@@ -121,7 +121,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div className="ml-4">
                     <h3 className="text-lg font-medium text-gray-900">Location</h3>
-                    <p className="mt-1 text-gray-600">San Francisco, CA</p>
+                    <p className="mt-1 text-gray-600">Gandhinagar, Gujarat</p>
                   </div>
                 </div>
                 
