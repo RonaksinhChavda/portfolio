@@ -126,20 +126,20 @@ const Projects: React.FC = () => {
                 key={index}
                 // @ts-ignore
                 ref={(el) => (cardRefs.current[index] = el)}
-                className={`opacity-0 transform translate-y-10 transition-all duration-1000 delay-${
+                className={`opacity-0 border  transform translate-y-10 transition-all duration-1000 delay-${
                   index * 100
                 }`}
                 onMouseEnter={() => setActiveIndex(index)}
               >
-                <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-full flex flex-col transform hover:-translate-y-2">
-                  <div className="relative overflow-hidden">
-                    <img
+                <div className="bg-white rounded-xl overflow-hidden  hover:shadow-xl transition-all duration-300 h-full flex flex-col transform hover:-translate-y-2">
+                  <div className="relative overflow-hidden h-[200px]">
+                    {/* <img
                       src={project.image}
                       alt={project.title}
                       className="w-full h-48 object-cover transition-transform duration-500 transform hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
-                      <h3 className="text-white text-xl font-bold p-4">
+                    /> */}
+                    <div className="absolute inset-0 bg-gradient-to-t  flex items-end">
+                      <h3 className="text-purple-600 text-xl font-bold p-4">
                         {project.title}
                       </h3>
                     </div>
